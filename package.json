@@ -4,7 +4,10 @@
   "description": "Flexible api to fetch npm package info",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "is-ci \"test:coverage\" \"test:watch\"",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch"
   },
   "files": ["index.js", "utils.js"],
   "keywords": [],
@@ -13,5 +16,8 @@
   "dependencies": {
     "got": "^9.6.0",
     "jest": "^24.1.0"
+  },
+  "devDependencies": {
+    "is-ci-cli": "^1.1.1"
   }
 }
