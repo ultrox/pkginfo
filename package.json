@@ -18,6 +18,8 @@
     "jest": "^24.1.0"
   },
   "devDependencies": {
+    "eslint": "^5.14.1",
+    "eslint-config-mavu": "^14.3.0",
     "is-ci-cli": "^1.1.1"
   }
 }
