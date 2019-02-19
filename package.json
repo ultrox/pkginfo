@@ -1,0 +1,17 @@
+{
+  "name": "@ma.vu/pkginfo",
+  "version": "1.0.0",
+  "description": "Flexible api to fetch npm package info",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "files": ["index.js", "utils.js"],
+  "keywords": [],
+  "author": "Marko Vujanic",
+  "license": "MIT",
+  "dependencies": {
+    "got": "^9.6.0",
+    "jest": "^24.1.0"
+  }
+}
