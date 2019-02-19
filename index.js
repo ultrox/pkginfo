@@ -7,7 +7,7 @@ module.exports = function(pckg, opts = ['name', 'version', 'description']) {
   if (typeof pckg === 'string') {
     pckg = { name: pckg }
   }
-  if (typeof pckg.name !== 'string') {
+  if (pckg.name && typeof pckg.name !== 'string') {
     return Promise.reject(new Error('package name required'))
   }
   return got('https://registry.npmjs.org/' + pckg.name.toLowerCase())
