@@ -1,6 +1,6 @@
 {
   "name": "@ma.vu/pkginfo",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Flexible api to fetch npm package info",
   "main": "index.js",
   "scripts": {
