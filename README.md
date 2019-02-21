@@ -16,7 +16,7 @@
 
 ## Usage
 
-### `pkginfo <object|str>,[ arr ] => Promise`
+### `pkginfo <object|str>,[ options ] => Promise`
 
 Accepts name of package, returns name, version & description (default)
 
