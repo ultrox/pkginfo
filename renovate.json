@@ -1,0 +1,40 @@
+{
+  "separateMinorPatch": true,
+  "rebaseStalePrs": true,
+  "semanticCommits": true,
+  "semanticCommitType": "chore",
+  "extends": [
+    "config:base",
+    ":preserveSemverRanges",
+    "schedule:weekly",
+    ":automergePatch"
+  ],
+  "renovateFork": true,
+  "major": {
+    "packageRules": [
+      {
+        "packagePatterns": [".*"],
+        "semanticCommitType": "feat",
+        "labels": ["dependencies", "dep:major"]
+      }
+    ]
+  },
+  "minor": {
+    "packageRules": [
+      {
+        "packagePatterns": [".*"],
+        "semanticCommitType": "fix",
+        "labels": ["dependencies", "dep:minor"]
+      }
+    ]
+  },
+  "patch": {
+    "packageRules": [
+      {
+        "packagePatterns": [".*"],
+        "semanticCommitType": "chore",
+        "labels": ["dependencies", "dep:patch"]
+      }
+    ]
+  }
+}
