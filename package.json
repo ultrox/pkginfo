@@ -13,7 +13,16 @@
     "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch"
   },
   "files": ["index.js", "utils.js"],
-  "keywords": [],
+  "keywords": [
+    "available",
+    "package",
+    "npm",
+    "pkg",
+    "information",
+    "version",
+    "package info",
+    "npm info"
+  ],
   "author": "Marko Vujanic",
   "license": "MIT",
   "dependencies": {
