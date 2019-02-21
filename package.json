@@ -2,6 +2,9 @@
   "name": "@ma.vu/pkginfo",
   "version": "0.0.0-development",
   "description": "Flexible api to fetch npm package info",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "index.js",
   "scripts": {
     "test": "is-ci \"test:coverage\" \"test:watch\"",
