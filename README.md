@@ -1,3 +1,9 @@
+[![Build Status](https://travis-ci.org/ultrox/pkginfo.svg?branch=master)](https://travis-ci.org/ultrox/pkginfo)
+[![version](https://img.shields.io/npm/v/pkginfo.svg?style=flat-square)](http://npm.im/@ma.vu/pkginfo)
+[![downloads](https://img.shields.io/npm/dm/pkginfo.svg?style=flat-square)](http://npm-stat.com/charts.html?package=pkginfo&from=2019-02-21)
+[![MIT License](https://img.shields.io/npm/l/pkginfo.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
+
 ## Install
 
 
