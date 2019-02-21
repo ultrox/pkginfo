@@ -25,7 +25,7 @@ module.exports = function pkginfo(
 
         // edge: when there is no version
         if (!dataParsed.versions[version]) {
-          return { name: `${version} version of ${pckg.name} doesn't exist` }
+          return null
         }
 
         const dependencies = getDepLength(dataParsed, version)
@@ -72,9 +72,8 @@ module.exports = function pkginfo(
         return output
       })
       .catch(err => {
-        // I don't want to throw because I need this info as well
         if (err.statusCode === 404) {
-          return { name: `Package ${pckg.name} doesn't exist` }
+          return null
         }
         throw err
       })
