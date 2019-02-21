@@ -1,0 +1,19 @@
+{
+  "branch": "master",
+  "verifyConditions": ["@semantic-release/github"],
+  "prepare": [],
+  "publish": ["@semantic-release/github", "@semantic-release/npm"],
+  "analyzeCommits": {
+    "preset": "angular",
+    "releaseRules": [
+      { "type": "docs", "scope": "README", "release": "patch" },
+      { "type": "refactor", "release": "patch" },
+      { "type": "style", "release": "patch" },
+      { "type": "chore", "release": "patch" },
+      { "type": "minor", "release": "minor" },
+      { "type": "patch", "release": "patch" },
+      { "type": "major", "release": "major" },
+      { "type": "breaking", "release": "major" }
+    ]
+  }
+}
