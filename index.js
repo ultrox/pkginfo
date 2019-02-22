@@ -1,4 +1,5 @@
 // partially inspired from AlessandroMinoccheri/package-info
+// TODO: <22-02-19> - Marko: replace got with 'isomorphic-unfetch'
 const got = require('got')
 const { getDepLength, isValidPkgName } = require('./utils')
 

@@ -103,3 +103,15 @@ info({ name: 'got', version: '3.0.0' }, [
    }
 */
 ```
+
+### Null for not finding package or/and version
+
+Rationale for this is, if you query db and query can't yield the result, you
+will get null, error will not be thrown. The same is for version
+
+```javascript
+info('not-existing-package-name').then(data => console.log())
+/* 
+   null
+*/
+```
