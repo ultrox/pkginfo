@@ -71,9 +71,11 @@ module.exports = function pkginfo(
         }
 
         const output = {}
-        for (let option of opts) {
-          let value = allProps[option]
-          value && (output[option] = value)
+        for (const option of opts) {
+          const value = allProps[option]
+          if (value) {
+            output[option] = value
+          }
         }
         return output
       })
