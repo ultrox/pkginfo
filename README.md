@@ -1,15 +1,12 @@
 # pkginfo
-[![Build Status](https://travis-ci.org/ultrox/pkginfo.svg?branch=master)](https://travis-ci.org/ultrox/pkginfo)
-[![version](https://img.shields.io/npm/v/@ma.vu/pkginfo.svg?style=flat-square)](http://npm.im/@ma.vu/pkginfo)
-[![MIT License](https://img.shields.io/npm/l/pkginfo.svg?style=flat-square)](http://opensource.org/licenses/MIT)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
+[![Build Status][build-badge]][build]
+[![version][version-badge]][version]
+[![MIT License][license-badge]][license]
+[![semantic-release][semantic-badge]][semantic]
 [![Renovate - Always up to date][renovateapp-svg]][renovateapp-link]
-[![Coverage Status](https://coveralls.io/repos/github/ultrox/pkginfo/badge.svg?branch=master)](https://coveralls.io/github/ultrox/pkginfo?branch=master)
+[![Code Coverage][coverage-badge]][coverage]
 
 Flexible api to fetch npm package info
-
-[renovateapp-link]: https://renovatebot.com/dashboard#github/ultrox/pkginfo
-[renovateapp-svg]: https://img.shields.io/badge/always-up_to_date-brightgreen.svg
 
 ## Install
 
@@ -127,3 +124,22 @@ info({name: 'react', version: '100.0.0'}).then(data => console.log(data))
    null
 */
 ```
+
+
+[renovateapp-link]: https://renovatebot.com/dashboard#github/ultrox/pkginfo
+[renovateapp-svg]: https://img.shields.io/badge/always-up_to_date-brightgreen.svg
+
+[coverage-badge]: https://img.shields.io/codecov/c/github/ultrox/pkginfo.svg?style=flat-square
+[coverage]: https://codecov.io/github/ultrox/pkginfo
+
+[build-badge]: https://travis-ci.org/ultrox/pkginfo.svg?branch=master
+[build]: https://travis-ci.org/ultrox/pkginfo
+
+[version-badge]: https://img.shields.io/npm/v/@ma.vu/pkginfo.svg?style=flat-square
+[version]: https://img.shields.io/npm/v/@ma.vu/pkginfo.svg?style=flat-square
+
+[license-badge]: https://img.shields.io/npm/l/pkginfo.svg?style=flat-square
+[license]: https://img.shields.io/npm/l/pkginfo.svg?style=flat-square
+
+[semantic-badge]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square
+[semantic]: https://github.com/semantic-release/semantic-release
