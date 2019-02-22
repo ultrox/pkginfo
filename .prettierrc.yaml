@@ -1,0 +1,11 @@
+semi: false
+useTabs: false
+tabWidth: 2
+singleQuote: true
+trailingComma: all
+proseWrap: preserve
+overrides:
+  - files: 'package.json'
+    options:
+      parser: json
+      semi: true
