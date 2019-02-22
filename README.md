@@ -46,6 +46,7 @@ NOTE: It will completely override defaults
 
 ```
 homepage        => str(url)
+repository      => str
 latest          => semver
 name            => str
 description     => str

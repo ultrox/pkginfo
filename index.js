@@ -23,7 +23,7 @@ module.exports = function pkginfo(
         const license = dataParsed.license
         let homepage = ''
         let author = ''
-
+        let repository = ''
         // edge: when there is no version
         if (!dataParsed.versions[version]) {
           return null
@@ -38,6 +38,10 @@ module.exports = function pkginfo(
 
         if (dataParsed.homepage !== undefined) {
           homepage = dataParsed.homepage
+        }
+
+        if (dataParsed.repository !== undefined) {
+          repository = dataParsed.repository.url
         }
 
         // get author and maintainers
@@ -63,6 +67,7 @@ module.exports = function pkginfo(
           license,
           devDependencies,
           dependencies,
+          repository,
         }
 
         const output = {}

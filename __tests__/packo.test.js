@@ -3,6 +3,21 @@ const pkginfo = require('../index')
 
 const pkgname = 'axios'
 
+test('returnes all custom properties requested', async () => {
+  const axiosinfo = await pkginfo({ name: pkgname, version: '10.0.0' }, [
+    'homepage',
+    'latest',
+    'name',
+    'description',
+    'version',
+    'author',
+    'license',
+    'repository',
+    'empty',
+  ])
+  expect(Object.keys(axiosinfo)).toHaveLength(8)
+})
+
 test('return sane msg if package name empty str', () => {
   // eslint-disable-next-line
   pkginfo('').catch(e => {
@@ -58,6 +73,12 @@ test('return null if no version', async () => {
   }
 
   got.mockImplementationOnce(() => Promise.resolve(mockdata))
+  const axiosinfo = await pkginfo(pkgname)
+  expect(axiosinfo).toBe(null)
+})
+
+test('return null if server returns 404', async () => {
+  got.mockImplementationOnce(() => Promise.reject({ statusCode: 404 }))
   const axiosinfo = await pkginfo(pkgname)
   expect(axiosinfo).toBe(null)
 })
