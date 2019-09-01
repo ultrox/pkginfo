@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "prettier": "^1.16.4",
-    "eslint": "^5.14.1",
+    "eslint": "^6.0.0",
     "eslint-config-mavu": "^14.3.0",
     "husky": "^1.3.1",
     "is-ci-cli": "^1.1.1",
