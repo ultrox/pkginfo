@@ -31,7 +31,7 @@
   "author": "Marko Vujanic",
   "license": "MIT",
   "dependencies": {
-    "got": "^9.6.0"
+    "got": "^10.0.0"
   },
   "devDependencies": {
     "prettier": "^1.16.4",
